@@ -3,5 +3,8 @@
 }
 
 .choresHeading {
-   color: black;
+   color: teal;
+   font-size: 1.2vw;
+   font-style: italic;
+   text-decoration-line: underline;
 }
