@@ -1,13 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import RecipeDescription from './components/description.js';
+import RecipeIngredients from './components/Ingredients';
+import RecipePhoto from './components/Photos';
 
 function App() {
   return (
     <div className="App">
-    <div>
-       <RecipeDescription recipeAuthor/>
+      <div className = "recipePhotoBlock">
+      <RecipePhoto />
+      <div>
+        <RecipeDescription />
+        <RecipeIngredients />
+      </div>
+      </div>
     </div>
- </div>
   );
 }
 
