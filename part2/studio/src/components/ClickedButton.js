@@ -1,4 +1,4 @@
-import './styling.ss'
+import './styling.css'
 
 function ClickedButton() {
   function handleClick() {
