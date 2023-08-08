@@ -1,7 +1,7 @@
 import styles from './Description.module.css';
 import React from 'react';
 
-RecipeAuthor();{
+const RecipeAuthor = () => {
     let authorLink = "https://www.thepioneerwoman.com/food-cooking/recipes/a99178/instant-pot-pot-roast/"
     let authorPhoto = "https://hips.hearstapps.com/hmg-prod/images/pwspringset2-96-1644080194.jpg?crop=1.00xw:0.336xh;0,0.231xh&resize=980:*"
     let authorName = "Ree Drummond"
