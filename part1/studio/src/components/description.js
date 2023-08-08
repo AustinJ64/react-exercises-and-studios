@@ -12,11 +12,11 @@ RecipeAuthor();{
             <img src={authorPhoto} alt = "Ree Drummond laughing as she cooks for family" className={StyleSheet.imageUpdates} />
             <div>
                 <h3>{authorName}</h3>
-                <a href={authorlink}>The Pioneer Woman</a>
+                <a href={authorLink}>The Pioneer Woman</a>
             </div>
         </div>
     );
-};
+}
 
 class RecipeDescription extends React.Component {
 
