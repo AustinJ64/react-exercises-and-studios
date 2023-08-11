@@ -1,21 +1,21 @@
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.thepioneerwoman.com/food-cooking/recipes/a99178/instant-pot-pot-roast/";
+   let authorPhoto = "https://hips.hearstapps.com/hmg-prod/images/pwspringset2-96-1644080194.jpg?crop=1.00xw:0.336xh;0,0.231xh&resize=980:*";
+   let authorName = "Ree Drummond";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "Ree Drummond laughing" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
-            <a href={authorLink}></a> 
+            <a href={authorLink}>Ree Drummond's website</a> 
          </div>
       </div>
    );
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ['Chuck Roast', 'Potato', 'Carrot', 'Onion', 'Red Wine'];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -34,8 +34,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Instant Pot Pot Roast</h1>
+            <p>A wonderful and fast Roast recipe that will shred apart with just a fork!</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -47,7 +47,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://hips.hearstapps.com/hmg-prod/images/instant-pot-pot-roast-1591310014.jpg?crop=0.804xw:1.00xh;0.0272xw,0&resize=980:*" alt="Roast with Potato and Carrot" className="imageUpdates"/>
    );
 }
 
