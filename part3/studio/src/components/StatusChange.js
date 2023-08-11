@@ -21,9 +21,9 @@ export default function StatusChange () {
             <input type="submit" />
          </form>
 
-         <p>Recipe Notes: {notes}</p>
+         <p>My Recipe Notes: {notes}</p>
 
-         <p>I {recipeStatus ? "have" : "have not"}tried this recipe!</p>
+         <p>I {recipeStatus ? "have" : "have not"} tried this recipe!</p>
       </div>
    );
 }

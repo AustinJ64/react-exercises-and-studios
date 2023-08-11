@@ -2,11 +2,11 @@ import { useState } from 'react';
 
 export default function BoardAssignment () {
    const boards = [
-      {label: "Dinner", value: "Dinner"},
-      {label: "Lunch", value: "Lunch"},
-      {label: "Quick and Easy", value: "Quick and Easy"}];
+      {label: "Supper", value: "Supper"},
+      {label: "Breakfast Buffet", value: "Breakfast Buffet"},
+      {label: "Afternoon Tea", value: "Afternoon Tea"}];
 
-      const [boardName, setName] = useState('no boards yet');
+   const [boardName, setName] = useState('no boards yet');
 
    const handleChange = (event) => {
       setName(event.target.value);
@@ -17,11 +17,11 @@ export default function BoardAssignment () {
       <label>Save to Board: </label>
       <select value={boardName} onChange={handleChange}>
          {boards.map((board) => (
-            <option value = {board.value}>{board.label}</option>
+            <option value={board.value}>{board.label}</option>
          ))}
       </select>
 
-      <p>Saved to {boards}!</p>
+      <p>Saved to {boardName}!</p>
       </div>
    );
 }
